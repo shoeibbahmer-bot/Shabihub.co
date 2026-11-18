@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/DELL/Pictures/Screenshots/**)",
+      "PowerShell(Copy-Item -Path \"C:\\\\Users\\\\DELL\\\\Pictures\\\\Screenshots\\\\Screenshot 2026-08-10 152808.png\" -Destination \"C:\\\\Users\\\\DELL\\\\Desktop\\\\Shabihub.co\\\\site-bg.png\" -Force)",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\DELL\\\\Desktop\\\\Shabihub.co\\\\style.css\" | Measure-Object -Line\\).Lines)",
+      "Read(//c/Users/DELL/Downloads/**)",
+      "PowerShell(powershell -File \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-DELL-Desktop-Shabihub-co\\\\b7af4cf2-7763-44a8-8652-9b373447104c\\\\scratchpad\\\\strip-bg.ps1\")",
+      "Read(//c/Users/DELL/**)",
+      "PowerShell(powershell -File \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-DELL-Desktop-Shabihub-co\\\\b7af4cf2-7763-44a8-8652-9b373447104c\\\\scratchpad\\\\crop-logo2.ps1\")",
+      "PowerShell(powershell -File \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-DELL-Desktop-Shabihub-co\\\\b7af4cf2-7763-44a8-8652-9b373447104c\\\\scratchpad\\\\build-logo.ps1\")",
+      "PowerShell(Move-Item -Path \"C:\\\\Users\\\\DELL\\\\Desktop\\\\Shabihub.co\\\\logo-mark2.png\" -Destination \"C:\\\\Users\\\\DELL\\\\Desktop\\\\Shabihub.co\\\\logo-mark.png\" -Force)",
+      "Read(//c/Users/DELL/Desktop/Shabihub.co/**)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\DELL\\Pictures\\Screenshots"
+    ]
+  }
+}

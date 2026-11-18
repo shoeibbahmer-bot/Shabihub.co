@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:standardtouch.com)",
+      "PowerShell(Start-Process \"index.html\")",
+      "PowerShell(\"opened index.html in default browser\")",
+      "PowerShell(Get-Item \"c:\\\\Users\\\\DELL\\\\Desktop\\\\SH ERP\\\\style.css\" | Select-Object Length; \\(Get-Content \"c:\\\\Users\\\\DELL\\\\Desktop\\\\SH ERP\\\\style.css\" | Measure-Object -Line\\).Lines)",
+      "PowerShell(\\(Get-Content \"C:\\\\Users\\\\DELL\\\\Desktop\\\\Shabihub\\\\about.html\" | Measure-Object -Line\\).Lines)",
+      "PowerShell(Remove-Item \"c:\\\\Users\\\\DELL\\\\Desktop\\\\SH ERP\\\\smart-phone-flat-style_78370-4084.avif\" -Confirm:$false)",
+      "PowerShell(powershell -File \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-DELL-Desktop-Shabihub-co\\\\b7af4cf2-7763-44a8-8652-9b373447104c\\\\scratchpad\\\\strip-bg.ps1\")",
+      "PowerShell(powershell -File \"C:\\\\Users\\\\DELL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-DELL-Desktop-Shabihub-co\\\\b7af4cf2-7763-44a8-8652-9b373447104c\\\\scratchpad\\\\crop-logo.ps1\")"
+    ]
+  }
+}

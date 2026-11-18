@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>API &amp; Integration Work — REST, GraphQL &amp; Webhooks | Shabihub</title>
+<meta name="description" content="REST and GraphQL layers, webhooks and middleware between systems that were never designed to talk — reliable API and integration work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="icon" type="image/png" href="../assets/img/logo-mark.png">
+<link rel="stylesheet" href="../assets/css/style.css?v=6">
+<script>document.documentElement.classList.remove('no-js')</script>
+</head>
+<body>
+
+<!-- ============ TOP BAR (desktop only) ============ -->
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <div class="topbar__meta">
+      <a href="mailto:contact@shabihub.com"><i class="fa-solid fa-envelope"></i> contact@shabihub.com</a>
+      <a href="tel:+919985500713"><i class="fa-solid fa-phone"></i> +91 99855 00713</a>
+      <span><i class="fa-solid fa-location-dot"></i> Hyderabad · Bengaluru · Riyadh</span>
+    </div>
+    <div class="topbar__meta">
+      <a class="topbar__inq" href="../contact.html">Make an Inquiry <i class="fa-solid fa-arrow-right"></i></a>
+      <span><i class="fa-solid fa-globe"></i> EN</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="../index.html"><img src="../assets/img/logo.svg" alt="Shabihub" width="168" height="50"></a>
+
+    <!-- DESKTOP: mega menu -->
+    <nav class="dnav" aria-label="Primary">
+      <a class="dnav__link" href="../index.html">Home</a>
+
+      <div class="dnav__item">
+        <a class="dnav__link" href="../services.html#ai">AI Solutions <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="mega">
+          <div class="mega__intro">
+            <span class="eyebrow">Applied AI</span>
+            <h4>AI Solutions</h4>
+            <p>Generative AI copilots, RAG assistants over your own documents, predictive models, computer vision and agentic automation — production-ready, not demos.</p>
+            <a class="lnk" href="../services.html#ai">All AI services <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="mega__links">
+            <a href="../services/ai-strategy-consulting.html"><i class="fa-solid fa-chess-knight"></i>AI Strategy &amp; Consulting</a>
+            <a href="../services/generative-ai-copilots.html"><i class="fa-solid fa-wand-magic-sparkles"></i>Generative AI &amp; Copilots</a>
+            <a href="../services/machine-learning-forecasting.html"><i class="fa-solid fa-chart-line"></i>Machine Learning &amp; Forecasting</a>
+            <a href="../services/computer-vision-ocr.html"><i class="fa-solid fa-eye"></i>Computer Vision &amp; OCR</a>
+            <a href="../services/chatbots-voice-agents.html"><i class="fa-solid fa-comments"></i>Chatbots &amp; Voice Agents</a>
+            <a href="../services/ai-process-automation.html"><i class="fa-solid fa-gears"></i>AI Process Automation</a>
+          </div>
+          <div class="mega__promo">
+            <b>AI copilot deployed</b>
+            <span class="big">+46%</span>
+            <small>Support resolution</small>
+            <a class="btn btn--sm" href="../contact.html">Book a Strategy Call</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dnav__item">
+        <a class="dnav__link" href="../services.html#web">Web Development <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="mega">
+          <div class="mega__intro">
+            <span class="eyebrow">Build &amp; Support</span>
+            <h4>Web Development</h4>
+            <p>Fast, accessible, SEO-ready marketing sites and complex web applications built on modern frameworks and a headless architecture.</p>
+            <a class="lnk" href="../services.html#web">All web services <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="mega__links mega__links--groups">
+            <div>
+              <p class="mega__grp">Build</p>
+              <a href="../services/website-development.html"><i class="fa-solid fa-globe"></i>Website Development</a>
+              <a href="../services/custom-web-applications.html"><i class="fa-solid fa-window-maximize"></i>Custom Web Applications</a>
+              <a href="../services/ecommerce-development.html"><i class="fa-solid fa-bag-shopping"></i>E-Commerce Development</a>
+            </div>
+            <div>
+              <p class="mega__grp">Support</p>
+              <a href="../services/website-maintenance.html"><i class="fa-solid fa-screwdriver-wrench"></i>Website Maintenance</a>
+              <a href="../services/performance-seo-audits.html"><i class="fa-solid fa-gauge-high"></i>Performance &amp; SEO Audits</a>
+              <a href="../services/api-integration-work.html"><i class="fa-solid fa-plug"></i>API &amp; Integration Work</a>
+            </div>
+          </div>
+          <div class="mega__promo">
+            <b>Stack</b>
+            <span class="chips"><i>React</i><i>Next.js</i><i>Laravel</i></span>
+            <a class="btn btn--sm" href="../contact.html">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dnav__item">
+        <a class="dnav__link" href="../services.html#app">App Development <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="mega">
+          <div class="mega__intro">
+            <span class="eyebrow">Mobile</span>
+            <h4>App Development</h4>
+            <p>One Flutter codebase for iOS, Android and web — pixel-accurate UI, native performance and offline-first data sync.</p>
+            <a class="lnk" href="../services.html#app">All app services <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="mega__links">
+            <a href="../services/mobile-app-development.html"><i class="fa-solid fa-mobile-screen-button"></i>Mobile App Development</a>
+            <a href="../services/flutter-cross-platform-apps.html"><i class="fa-solid fa-layer-group"></i>Flutter Cross-Platform Apps</a>
+            <a href="../services/ui-ux-app-design.html"><i class="fa-solid fa-pen-ruler"></i>UI/UX &amp; App Design</a>
+            <a href="../services/app-maintenance-support.html"><i class="fa-solid fa-life-ring"></i>App Maintenance &amp; Support</a>
+            <a href="../services/app-migration-rescue.html"><i class="fa-solid fa-truck-medical"></i>App Migration &amp; Rescue</a>
+            <a href="../services/ai-features-in-app.html"><i class="fa-solid fa-microchip"></i>AI Features In-App</a>
+          </div>
+          <div class="mega__promo">
+            <b>Stack</b>
+            <span class="chips"><i>Flutter</i><i>Native</i><i>Firebase</i></span>
+            <a class="btn btn--sm" href="../contact.html">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="dnav__link" href="../services.html#erp">ERP Solutions</a>
+
+      <div class="dnav__item">
+        <a class="dnav__link" href="../services.html#marketing">Digital Marketing <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="mega">
+          <div class="mega__intro">
+            <span class="eyebrow">Growth</span>
+            <h4>Digital Marketing</h4>
+            <p>SEO, paid media, social and content run against pipeline targets — with attribution you can audit line by line.</p>
+            <a class="lnk" href="../services.html#marketing">All marketing services <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="mega__links mega__links--groups mega__links--3">
+            <div>
+              <p class="mega__grp">Performance</p>
+              <a href="../services/ppc-paid-media.html"><i class="fa-solid fa-bullseye"></i>PPC &amp; Paid Media</a>
+              <a href="../services/seo-google-services.html"><i class="fa-brands fa-google"></i>SEO &amp; Google Services</a>
+            </div>
+            <div>
+              <p class="mega__grp">Brand</p>
+              <a href="../services/social-media-marketing.html"><i class="fa-solid fa-hashtag"></i>Social Media Marketing</a>
+              <a href="../services/content-creative.html"><i class="fa-solid fa-feather"></i>Content &amp; Creative</a>
+            </div>
+            <div>
+              <p class="mega__grp">Growth</p>
+              <a href="../services/marketing-automation.html"><i class="fa-solid fa-robot"></i>Marketing Automation</a>
+              <a href="../services/analytics-attribution.html"><i class="fa-solid fa-chart-pie"></i>Analytics &amp; Attribution</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="dnav__link" href="../portfolio.html">Portfolio</a>
+      <a class="dnav__link" href="../about.html">About Us</a>
+    </nav>
+
+    <a class="btn btn--sm hdr__cta" href="../contact.html">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+
+    <!-- MOBILE: trigger -->
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU (full-screen sheet, different from desktop) ============ -->
+<div class="mnav" id="mnav" aria-hidden="true">
+  <div class="mnav__top">
+    <img src="../assets/img/logo-white.svg" alt="Shabihub" width="140" height="42">
+    <button class="mnav__close" id="mnavClose" type="button" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <div class="mnav__quick">
+    <a href="tel:+919985500713"><i class="fa-solid fa-phone"></i>Call</a>
+    <a href="https://wa.me/919985500713"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+    <a href="mailto:contact@shabihub.com"><i class="fa-solid fa-envelope"></i>Email</a>
+  </div>
+
+  <nav class="mnav__list" aria-label="Mobile">
+    <a class="mnav__row" href="../index.html"><span>01</span>Home</a>
+    <details class="mnav__acc">
+      <summary class="mnav__row"><span>02</span>AI Solutions<i class="fa-solid fa-plus"></i></summary>
+      <div class="mnav__sub">
+        <a href="../services/ai-strategy-consulting.html">AI Strategy &amp; Consulting</a>
+        <a href="../services/generative-ai-copilots.html">Generative AI &amp; Copilots</a>
+        <a href="../services/machine-learning-forecasting.html">Machine Learning &amp; Forecasting</a>
+        <a href="../services/computer-vision-ocr.html">Computer Vision &amp; OCR</a>
+        <a href="../services/chatbots-voice-agents.html">Chatbots &amp; Voice Agents</a>
+        <a href="../services/ai-process-automation.html">AI Process Automation</a>
+      </div>
+    </details>
+    <details class="mnav__acc">
+      <summary class="mnav__row"><span>03</span>Web Development<i class="fa-solid fa-plus"></i></summary>
+      <div class="mnav__sub">
+        <a href="../services/website-development.html">Website Development</a>
+        <a href="../services/custom-web-applications.html">Custom Web Applications</a>
+        <a href="../services/ecommerce-development.html">E-Commerce Development</a>
+        <a href="../services/website-maintenance.html">Website Maintenance</a>
+        <a href="../services/performance-seo-audits.html">Performance &amp; SEO Audits</a>
+        <a href="../services/api-integration-work.html">API &amp; Integration Work</a>
+      </div>
+    </details>
+    <details class="mnav__acc">
+      <summary class="mnav__row"><span>04</span>App Development<i class="fa-solid fa-plus"></i></summary>
+      <div class="mnav__sub">
+        <a href="../services/mobile-app-development.html">Mobile App Development</a>
+        <a href="../services/flutter-cross-platform-apps.html">Flutter Cross-Platform Apps</a>
+        <a href="../services/ui-ux-app-design.html">UI/UX &amp; App Design</a>
+        <a href="../services/app-maintenance-support.html">App Maintenance &amp; Support</a>
+        <a href="../services/app-migration-rescue.html">App Migration &amp; Rescue</a>
+        <a href="../services/ai-features-in-app.html">AI Features In-App</a>
+      </div>
+    </details>
+    <a class="mnav__row" href="../services.html#erp"><span>05</span>ERP Solutions</a>
+    <details class="mnav__acc">
+      <summary class="mnav__row"><span>06</span>Digital Marketing<i class="fa-solid fa-plus"></i></summary>
+      <div class="mnav__sub">
+        <a href="../services/ppc-paid-media.html">PPC &amp; Paid Media</a>
+        <a href="../services/seo-google-services.html">SEO &amp; Google Services</a>
+        <a href="../services/social-media-marketing.html">Social Media Marketing</a>
+        <a href="../services/content-creative.html">Content &amp; Creative</a>
+        <a href="../services/marketing-automation.html">Marketing Automation</a>
+        <a href="../services/analytics-attribution.html">Analytics &amp; Attribution</a>
+      </div>
+    </details>
+    <a class="mnav__row" href="../portfolio.html"><span>07</span>Portfolio</a>
+    <a class="mnav__row" href="../about.html"><span>08</span>About Us</a>
+  </nav>
+
+  <a class="btn btn--block" href="../contact.html">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
+  <p class="mnav__foot">Hyderabad · Bengaluru · Riyadh</p>
+</div>
+
+<main>
+<!-- ============ PAGE HERO ============ -->
+
+<section class="page-hero">
+    <div class="container page-hero__inner">
+        <span class="badge badge--dark">Web Development</span>
+        <h1 class="h-xl">Making Disconnected Systems <span class="grad-text">Behave Like One</span></h1>
+        <p>
+            REST and GraphQL layers, webhooks, third-party integrations and middleware between
+            systems that were never designed to talk to each other.
+        </p>
+        <div class="crumbs">
+            <a href="../index.html">Home</a> <i class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>
+            <a href="../services.html#web">Services</a> <i class="fa-solid fa-chevron-right" style="font-size:.6rem"></i>
+            <span>API &amp; Integration Work</span>
+        </div>
+    </div>
+</section>
+
+<!-- ============ OVERVIEW ============ -->
+
+<section class="section">
+    <div class="container split">
+
+        <div class="reveal">
+            <span class="badge">Overview</span>
+            <h2 class="h-lg">Making Disconnected Systems Behave Like One</h2>
+            <p class="lede">
+                Most "integration problems" turn out to be API design problems — undocumented,
+                inconsistent, or missing entirely. We fix that layer first, then connect what
+                needs to be connected.
+            </p>
+
+            <ul class="tick-list">
+                <li><i class="fa-solid fa-circle-check"></i> REST and GraphQL API design and documentation</li>
+                <li><i class="fa-solid fa-circle-check"></i> Webhook delivery with retries and signature verification</li>
+                <li><i class="fa-solid fa-circle-check"></i> Middleware between legacy and modern systems</li>
+                <li><i class="fa-solid fa-circle-check"></i> Authentication done properly — OAuth2, API keys, SSO</li>
+                <li><i class="fa-solid fa-circle-check"></i> Rate limiting, versioning and backward compatibility</li>
+                <li><i class="fa-solid fa-circle-check"></i> Monitoring and alerting on integration failures</li>
+            </ul>
+
+            <a class="btn" href="../contact.html">Discuss Your Integration <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="reveal">
+            <div class="process" style="grid-template-columns:1fr 1fr">
+                <article class="step"><div class="step__num">01</div><h3>Map the systems</h3><p>Data flow, ownership and where it currently breaks.</p></article>
+                <article class="step"><div class="step__num">02</div><h3>Design the contract</h3><p>API shape, auth model and versioning strategy.</p></article>
+                <article class="step"><div class="step__num">03</div><h3>Build the layer</h3><p>Middleware, endpoints and webhook handling.</p></article>
+                <article class="step"><div class="step__num">04</div><h3>Test failure modes</h3><p>Timeouts, retries and partial failures, deliberately.</p></article>
+                <article class="step"><div class="step__num">05</div><h3>Deploy with monitoring</h3><p>Alerting on failures before they cascade.</p></article>
+                <article class="step"><div class="step__num">06</div><h3>Document &amp; handover</h3><p>API docs your team can maintain going forward.</p></article>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ WHY IT HOLDS UP ============ -->
+
+<section class="section section--muted">
+    <div class="container">
+
+        <div class="section-head reveal">
+            <span class="badge">Why It Holds Up</span>
+            <h2 class="h-lg">Built To Survive The Other System Changing</h2>
+            <p class="lede">Integrations that don't quietly break when a vendor ships an update.</p>
+        </div>
+
+        <div class="feature-grid">
+
+            <article class="feature reveal">
+                <div class="feature__icon"><i class="fa-solid fa-code-branch"></i></div>
+                <h3>REST &amp; GraphQL</h3>
+                <p>Whichever fits the data shape and consumer — versioned and documented properly.</p>
+            </article>
+
+            <article class="feature reveal">
+                <div class="feature__icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                <h3>Reliable webhooks</h3>
+                <p>Delivery with retries and signature verification, so events don't silently drop.</p>
+            </article>
+
+            <article class="feature reveal">
+                <div class="feature__icon"><i class="fa-solid fa-diagram-project"></i></div>
+                <h3>Legacy-friendly</h3>
+                <p>Middleware that isolates modern systems from an older one's quirks.</p>
+            </article>
+
+            <article class="feature reveal">
+                <div class="feature__icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h3>Monitored</h3>
+                <p>Failures are alerted on, not discovered when a downstream report looks wrong.</p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+
+<section class="section">
+    <div class="container">
+
+        <div class="section-head reveal">
+            <span class="badge">FAQ</span>
+            <h2 class="h-lg">Before You Enquire</h2>
+        </div>
+
+        <div class="faq reveal">
+
+            <details><summary>Can you integrate with our ERP (ERPNext, SAP, etc.)?<i class="fa-solid fa-plus"></i></summary><p>Yes — this is one of our most common project types. See <a href="../services.html#erp">ERP Solutions</a> for how we typically approach it.</p></details>
+
+            <details><summary>What if the third-party API is undocumented or unreliable?<i class="fa-solid fa-plus"></i></summary><p>We build a resilient middleware layer that isolates the rest of your system from that flakiness — retries, fallbacks and clear error surfacing.</p></details>
+
+            <details><summary>Do you write documentation for the API?<i class="fa-solid fa-plus"></i></summary><p>Yes, OpenAPI or GraphQL schema documentation is a standard deliverable, not an afterthought.</p></details>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ CTA ============ -->
+
+<section class="cta">
+    <div class="container cta__inner">
+        <h2>Got Two Systems That Refuse To Talk?</h2>
+        <p>Describe what needs to connect to what. We'll tell you where the actual problem is.</p>
+        <div class="cta__btns">
+            <a class="btn btn--light" href="../contact.html">Book a Strategy Call</a>
+            <a class="btn btn--ghost-light" href="../portfolio.html">See Our Work</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div class="ftr__about">
+        <img src="../assets/img/logo-white.svg" alt="Shabihub" width="160" height="48">
+        <p>Shabihub is an AI and IT company helping organisations accelerate digital transformation through applied AI, custom software, ERP, cloud services, mobile apps and digital marketing.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="../services.html#ai">AI Solutions</a><a href="../services.html#web">Web Development</a><a href="../services.html#app">App Development</a><a href="../services.html#erp">ERP Solutions</a><a href="../services.html#marketing">Digital Marketing</a><a href="../services.html#software">Software Development</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="../about.html">About Us</a><a href="../portfolio.html">Portfolio</a><a href="../blogs.html">Blogs</a><a href="../services.html#pricing">Pricing</a><a href="../contact.html">Contact Us</a><a href="../about.html#team">Our Team</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:contact@shabihub.com"><i class="fa-solid fa-envelope"></i>contact@shabihub.com</a>
+        <a href="tel:+919985500713"><i class="fa-solid fa-phone"></i>+91 99855 00713</a>
+        <a href="tel:+918328175206"><i class="fa-solid fa-phone"></i>+91 83281 75206</a>
+        <a href="tel:+919886979796"><i class="fa-solid fa-phone"></i>+91 98869 79796</a>
+        <a href="https://wa.me/919985500713"><i class="fa-brands fa-whatsapp"></i>WhatsApp us</a>
+      </div>
+    </div>
+    <div class="offices">
+      <div><b>Hyderabad</b><span>Hitec City, Madhapur, Telangana, India</span></div>
+      <div><b>Bengaluru</b><span>Outer Ring Road, Karnataka, India</span></div>
+      <div><b>Riyadh</b><span>Olaya District, Saudi Arabia</span></div>
+      <div><b>Jeddah</b><span>Al Andalus District, Saudi Arabia</span></div>
+      <div><b>Dubai</b><span>Business Bay, United Arab Emirates</span></div>
+    </div>
+    <div class="ftr__bottom">
+      <p>© <span id="yr">2026</span> Shabihub. All rights reserved.</p>
+      <nav><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Sitemap</a></nav>
+    </div>
+  </div>
+</footer>
+
+<!-- desktop floating rail -->
+<div class="rail">
+  <a href="mailto:contact@shabihub.com" aria-label="Email us"><i class="fa-solid fa-envelope"></i></a>
+  <a href="tel:+919985500713" aria-label="Call us"><i class="fa-solid fa-phone"></i></a>
+  <a href="https://wa.me/919985500713" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+
+<!-- mobile bottom action bar -->
+<nav class="mbar" aria-label="Quick actions">
+  <a href="tel:+919985500713"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+  <a href="https://wa.me/919985500713"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+  <a class="mbar__main" href="../contact.html"><i class="fa-solid fa-paper-plane"></i><span>Enquire</span></a>
+  <button type="button" id="mbarMenu"><i class="fa-solid fa-grip"></i><span>Menu</span></button>
+</nav>
+
+<script src="../assets/js/main.js?v=6"></script>
+</body>
+</html>
